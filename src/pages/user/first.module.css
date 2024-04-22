@@ -1,0 +1,38 @@
+@import url(../colorVaration.css);
+
+
+.firstPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10px;
+}
+
+.firstPage Button {
+  font-size: 0.9rem;
+  max-width: 400px;
+  color: var(--color-white);
+  width: 100%;
+  box-shadow: 4px 2px 4px var(--color-ddd);
+  border-radius: 8px;
+  line-height: unset;
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+Button.login {
+  color: var(--color-111);
+  background: var(--color-white);
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+
+Button.signup {
+  background-color: var(--color-main);
+  margin-bottom: 16px;
+}
+.unsign {
+  font-size: 14px;
+}

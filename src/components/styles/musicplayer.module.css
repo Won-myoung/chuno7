@@ -1,0 +1,171 @@
+@import url(../../pages/colorVaration.css);
+
+.wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.musicplayerWrap {
+  margin-bottom: 100px;
+
+  backdrop-filter: blur(10px);
+}
+
+.hiddenOverflow {
+  overflow: hidden;
+}
+
+.musicplayerTop {
+  color: var(--color-545050);
+  & button {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.musicMainCover {
+  background-color: var(--color-main);
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.songTitle {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color-333030);
+  margin-bottom: 40px;
+}
+
+.seekBar {
+  width: 100%;
+  border: none;
+  margin-bottom: 40px;
+  accent-color: var(--color-main);
+  cursor: pointer;
+}
+input[type='range'] {
+  /* 기본 스타일 */
+  -webkit-appearance: none;
+  height: 10px; /* 바의 높이를 조절합니다. */
+  border-radius: 5px;
+  background: var(--color-ddd);
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  /* 슬라이더(thumb) 스타일 */
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-main);
+  cursor: pointer;
+}
+
+.musicControl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+.defaultControl {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: auto;
+}
+.volumes {
+  position: relative;
+  margin-left: auto;
+}
+.btnVolume {
+}
+.volumeRa {
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+.prev:active path,
+.pause:active path,
+.next:active path {
+  fill: var(--color-main); /* 첫 번째 요소에 대한 색상 */
+}
+
+.listBox {
+  padding: 20px;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(50px);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: all 0.3s;
+  height: 100px;
+  & .songlistTitle {
+    opacity: 0;
+    height: 0;
+    transition: all 0.3s;
+  }
+}
+
+.fullBox {
+  padding: 20px;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  transition: all 0.3s;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  & .songlistTitle {
+    line-height: 72px;
+    opacity: 1;
+    height: 50px;
+    font-size: 18px;
+    transition: all 0.3s;
+  }
+}
+/* --toggle--- */
+.currentPlay {
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  height: 72px;
+  overflow: hidden;
+}
+
+.songlist {
+  max-width: 800px;
+  & .option {
+    margin: auto 0;
+  }
+  & .option {
+    margin-left: auto;
+  }
+}
+
+.songlistItem {
+  margin: 10px 0 20px 0;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.thumbnail {
+  & img {
+    width: 50px;
+    aspect-ratio: 1/1;
+    background-color: var(--color-white);
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+}

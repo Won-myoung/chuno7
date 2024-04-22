@@ -1,0 +1,59 @@
+@import url(../../pages/colorVaration.css);
+
+
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+/* ------------------- */
+.mainpageInput {
+  margin-top: 20px;
+  width: 100%;
+}
+.mainpageInput input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-eee);
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+.wrap {
+  margin-bottom: 100px;
+}
+
+.miniTitle {
+  font-size: 12px;
+  color: var(--color-main);
+  font-weight: 400;
+}
+.miniTitle2 {
+  margin-top: 40px;
+}
+.bodyText {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-white);
+  margin-bottom: 12px;
+}
+
+.pickTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.moreBtn {
+  /* height: 10px; */
+  margin-top: auto;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.recommendList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}

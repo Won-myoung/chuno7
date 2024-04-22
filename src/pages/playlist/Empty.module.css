@@ -1,0 +1,17 @@
+@import url(../colorVaration.css);
+
+.emptyScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  gap: 20px;
+}
+
+.emptyScreenText {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-main);
+}

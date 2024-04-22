@@ -1,0 +1,37 @@
+@import url(../../pages/colorVaration.css);
+
+
+.searchForm {
+  display: flex;
+  margin: 10px 0;
+  position: relative;
+}
+.search {
+  outline: none;
+  border: 0;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-ddd);
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 10px 8px;
+  width: 100%;
+
+  &:focus {
+    border-color: var(--color-4e7cf3);
+  }
+}
+.searchSubmit {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-10%, -40%);
+  outline: none;
+  border: 0;
+  background-color: transparent;
+
+  &:hover {
+    & svg {
+      fill: var(--color-black);
+    }
+  }
+}
