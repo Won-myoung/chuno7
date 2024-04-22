@@ -14,7 +14,7 @@ function First() {
           className={styles.login}
           onClick={() => navigate('/users/login')}
         >
-          로그인
+          로그인2
         </Button>
         <Button
           className={styles.signup}
